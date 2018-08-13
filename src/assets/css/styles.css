@@ -155,7 +155,7 @@ p {
 
 .video_background,
 .video {
-	background: url('../../../../image.ibb.co/h0CXaw/photo_5.jpg') no-repeat 0 0;
+	background: url('../photos/image.ibb.co/h0CXaw/photo_5.jpg') no-repeat 0 0;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -191,12 +191,12 @@ p {
 	height: 100%;
 }
 .particles_effect .container {
-	background: url('../../../../image.ibb.co/cqRx8G/photo_3.jpg') no-repeat 0 0;
+	background: url('../photos/image.ibb.co/cqRx8G/photo_3.jpg') no-repeat 0 0;
 	background-size: cover;
 	background-attachment: fixed;
 }
 .winter_effect .container {
-	background: url('../../../../image.ibb.co/knkeNb/photo_7.jpg') no-repeat 0 0;
+	background: url('../photos/image.ibb.co/knkeNb/photo_7.jpg') no-repeat 0 0;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -282,7 +282,7 @@ p {
 /******* Container section *******/
 
 .container {
-	background: url('../../../../image.ibb.co/ed9vvw/page_1.jpg') no-repeat center center;
+	background: url('../photos/image.ibb.co/ed9vvw/page_1.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -509,7 +509,7 @@ p {
 
 .features {
 	padding: 100px 0 50px;
-	background: url('../../../../image.ibb.co/e2DX8G/page_4.jpg') no-repeat center center;
+	background: url('../photos/image.ibb.co/e2DX8G/page_4.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	border: 0;
@@ -714,7 +714,7 @@ p {
 .statistic {
     padding: 150px 0 120px;
 	color: #000;
-	background: url('../../../../image.ibb.co/dPBQvw/page_6.jpg') no-repeat center center;
+	background: url('../photos/image.ibb.co/dPBQvw/page_6.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	border: 0;
@@ -842,7 +842,7 @@ p {
 .video_preview {
 	position: relative;
 	padding: 140px 0 160px;
-    background: url('../../../../image.ibb.co/ecm3hb/page_7.jpg') no-repeat center center;
+    background: url('../photos/image.ibb.co/ecm3hb/page_7.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 	border: 0;
@@ -1028,7 +1028,7 @@ p {
 
 .promo {
     padding: 180px 0;
-	background: url('../../../../image.ibb.co/kk8Naw/page_8.jpg') no-repeat center center;
+	background: url('../photos/image.ibb.co/kk8Naw/page_8.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	border: 0;
@@ -1131,7 +1131,7 @@ p {
 
 .contact {
     padding: 100px 0;
-	background: url('../../../../image.ibb.co/dJZvvw/page_9.jpg') no-repeat 0 0;
+	background: url('../photos/image.ibb.co/dJZvvw/page_9.jpg') no-repeat 0 0;
     background-size: cover;
     background-attachment: fixed;
 	border: 0;
@@ -1141,7 +1141,7 @@ p {
 
 .subscribe {
 	padding: 170px 0 150px;
-    background: url('../../../../image.ibb.co/fbxR2b/page_5.jpg') no-repeat center center;
+    background: url('../photos/image.ibb.co/fbxR2b/page_5.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 	border: 0;
@@ -1552,7 +1552,7 @@ p {
 
 .subscribe_window .uk-modal-dialog {
 	padding: 120px 30px;
-	background: #333 url('../../../../image.ibb.co/hC3ATG/w_dialog.jpg') no-repeat center center;
+	background: #333 url('../photos/image.ibb.co/hC3ATG/w_dialog.jpg') no-repeat center center;
 	background-size: cover;
 }
 .subscribe_window .uk-modal-dialog:before {
