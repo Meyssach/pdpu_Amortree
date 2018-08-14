@@ -47,9 +47,11 @@ p {
 }
 
 .aligner{
-	margin-left: 70%;
+	margin-left: 210px;
 }
-
+.aligner2{
+	margin-left: 100px;
+}
 
 
 .section {
