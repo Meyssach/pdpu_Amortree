@@ -1,53 +1,56 @@
 <app-header></app-header>
 
- <!-- SLIDER -->
- <div class="site-slider">
-  <div class="flexslider">
-      <ul class="slides">
-          <li class="slide">
-              <div class="overlay"></div>
-              <img src="../assets/slider/images/slide1.jpg" alt="">
-              <div class="slider-caption">
-                  <div class="title">
-                      <h2>WEB DESIGN</h2>
-                      <h2>INSPIRATION</h2>
-                  </div>
-                  <a href="#" class="slider-button">Download</a>
-              </div>
-          </li>
-          <li class="slide">
-              <div class="overlay"></div>
-              <img src="../assets/slider/images/slide2.jpg" alt="">
-              <div class="slider-caption">
-                  <div class="title">
-                      <h2>DEVELOPMENT</h2>
-                      <h2>TEMPLATEMO</h2>
-                  </div>
-                  <a href="#" class="slider-button">Read More</a>
-              </div>
-          </li>
-      </ul>
-  </div>   
-</div> <!-- .site-slider -->
 
 
-<section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden sepia_overlay container">
-	<div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
-
-		<div class="container_block">
-			<h1 class="uk-h1 container_title">SOFTWARE</h1>
-			<h2 class="uk-h2 container_subtitle">CREATIVE AGENCY</h2>
-			<div class="container_description">Sed ut perspic iatis unde omnis iste natus error sit volup tatem accusa ntium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo invent ore ab</div>
-
-			<div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
-				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded green_button container_button_message">Send message</div>
-				<div data-ng-click="scrollNav($event)" class="uk-button uk-border-rounded container_button_subscribe">Subscribe</div>
-			</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	  <li data-target="#myCarousel" data-slide-to="1"></li>
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+  
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+	  <div class="item active">
+		<img src="../assets/slider/images/p1.jpg" alt="Why">
+		<div class="carousel-caption">
+			<h3>Take care of your body, it's the  only place you have to live</h3>
 		</div>
+		<div class="container">
+				<img src="../assets/slider/images/bouton-test.jpg" alt="Snow">
+				<button class="btn">Button</button>
+			  </div>
+	  </div>
+  
+	  <div class="item">
+		<img src="../assets/slider/images/p2.jpg" alt="Products">
+		<div class="carousel-caption">
+			<h3>Sanitary pads are a necessity, not a luxury</h3>
+		</div>
+	  </div>
+  
+	  <div class="item">
+		<img src="../assets/slider/images/p3.jpg" alt="Did you know">
+		<div class="carousel-caption">
+			<h3>World's first gel based organic and compostable sanitary napkin from "SeaGrass"</h3>
+		</div>
+	  </div>
 
 	</div>
-	<div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
-</section>
+  
+	<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span>
+			<img style="width:30px;height:30px;" src="../assets/slider/images/back.png">
+		</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span>
+			<img style="width:30px;height:30px;" src="../assets/slider/images/next.png">
+		</span>
+	</a>
+  </div>
 
 
 <section class="features grey_overlay section">
