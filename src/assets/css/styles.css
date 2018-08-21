@@ -245,10 +245,13 @@ p {
 	right: 0;
 	z-index: 10;
 	transition: background 0.5s;
+	
+	
 }
 .header.active {
 	background: #5C6D7F;
 	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+	
 }
 .logo_link {
 	transition: height 0.5s;
@@ -268,6 +271,7 @@ p {
 .header_navbar_mobile {
 	transition: height 0.5s;
 	cursor: pointer;
+	
 }
 .header.active .header_navbar_mobile {
     height: 60px;
@@ -285,7 +289,7 @@ p {
 	text-shadow: none;
 }
 .uk-navbar-nav > li > a:hover {
-	color: rgba(255,255,255,.85);
+	color: rgba(255,255,255,0.8);
 }
 
 /******* Container section *******/
