@@ -22,23 +22,27 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 var routes: Routes = [
   {
-      path: "app",
-      children: [
-          {
-              path: "a",
-              component: WhyComponent
-          }
-      ]
-  },
+    path: "app",
+        children: [
+            {
+                path: "home",
+                component: HomeComponent
+                
+            },
+           
+        ]
+    },
+            {
+                path: "",
+                pathMatch: "full",
+                redirectTo: "app"
+            }
+      ];
+  
 
   // Redirect from the root to the "/app" prefix (this makes other features, like
   // secondary outlets) easier to implement later on.
-  {
-      path: "",
-      pathMatch: "full",
-      redirectTo: "app"
-  }
-];
+ 
 
 @NgModule({
   declarations: [
