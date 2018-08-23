@@ -114,7 +114,8 @@ export class FragmentTargetDirective implements OnInit, OnDestroy {
       this.elementRef = elementRef;
       this.windowScroller = windowScroller;
 
-      this.id = null;
+      
+     this. id = null;
       this.fragmentSubscription = null;
       this.name = null;
 

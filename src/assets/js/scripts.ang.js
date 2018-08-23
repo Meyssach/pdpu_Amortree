@@ -47,6 +47,7 @@ app.controller('myPageCtrl', function($scope,$http){
 
 		if ($scope.y > $scope.activeHeaderHeight) {
 			$scope.header.addClass('active');
+			
 		} else {
 			$scope.header.removeClass('active');
 		}
