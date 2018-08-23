@@ -29,12 +29,8 @@
     "mongoose": "^5.2.9",
     "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-page-scroll": "^5.0.0",
-<<<<<<< HEAD
     "rxjs": "^6.2.2",
-=======
     "ngx-toastr": "^9.0.2",
-    "rxjs": "^6.0.0",
->>>>>>> 076190f0a022a4bf35c386b18e8155fd026accfb
     "rxjs-compat": "^6.2.2",
     "save": "^2.3.2",
     "zone.js": "~0.8.26"
