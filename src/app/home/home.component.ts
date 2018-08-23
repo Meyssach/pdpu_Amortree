@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import {FormGroup,FormControl,Validators,FormsModule, } from '@angular/forms';  
-import {CommonService} from '../common.service';  
 import {Http,Response, Headers, RequestOptions } from '@angular/http';  
 
 @Component({
@@ -13,7 +12,7 @@ import {Http,Response, Headers, RequestOptions } from '@angular/http';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private route: ActivatedRoute, private router: Router, private newService :CommonService ) {}
+  constructor( private route: ActivatedRoute, private router: Router ) {}
 
   Repdata;  
   valbutton ="Submit"; 
@@ -25,17 +24,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  onSave = function(user,isValid: boolean) {    
-    user.mode= this.valbutton;  
-     this.newService.saveUser(user)  
-     .subscribe(data =>  {  alert(data.data);  
-          
-       this.ngOnInit();    
-     }   
-     , error => this.errorMessage = error )  
-       
-   } 
-   
+  
+
   ngOnInit() {
     this.router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {

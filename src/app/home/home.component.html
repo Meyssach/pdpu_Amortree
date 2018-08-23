@@ -203,7 +203,7 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 			<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
 			<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
 	
-			<form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
+			<form  #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
 				<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
 						<input name="id" type="hidden"     [(ngModel)]="id" /> 
 					<div class="uk-width-small-1-2 uk-margin-bottom">
