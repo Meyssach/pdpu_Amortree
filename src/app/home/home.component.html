@@ -13,7 +13,7 @@
 		<div class="carousel-caption">
 			<h3>Take care of your body, it's the  only place you have to live</h3>
 			
-      <a routerLink="#" fragment="why">
+      <a routerLink="/app/home" fragment="why" (click)="onAnchorClick()">
 				<input type="image" src="../assets/slider/images/why.png" alt="alt text" style="width: 400px;height: 100px;margin-top: 280px" />
 			</a>
 		</div>
@@ -23,7 +23,7 @@
 		<img src="../assets/slider/images/p2.jpg" alt="Products">
 		<div class="carousel-caption">
       <h3>Sanitary pads are a necessity, not a luxury</h3>
-      <a routerLink="#" fragment="products">
+      <a routerLink="/app/home" fragment="products" (click)="onAnchorClick()">
 				<input type="image" src="../assets/slider/images/products.png" alt="alt text" style="width: 400px;height: 100px;margin-top: 280px" />
 			</a>
 		</div>
@@ -33,7 +33,7 @@
 		<img src="../assets/slider/images/p3.jpg" alt="Did you know">
 		<div class="carousel-caption">
       <h3>World's first gel based organic and compostable sanitary napkin from "SeaGrass"</h3>
-      <a routerLink="/app/dyk" fragment="dyk">
+      <a routerLink="/app/home" fragment="dyk" (click)="onAnchorClick()">
 				<input type="image" src="../assets/slider/images/dyk.png" alt="alt text" style="width: 400px;height: 100px;margin-top: 280px" />
 			</a>
 		</div>
@@ -56,6 +56,7 @@
 
 
 <section class="features grey_overlay section">
+    <hr id="dyk" />
 	<div class="uk-container uk-container-center uk-position-relative" data-uk-scrollspy="{cls:'uk-active'}">
 		<h3 class="uk-h3 uk-text-center uk-text-contrast animated section_title features_title">Did you know ?</h3>
 		<h4 class="uk-h4 uk-text-contrast uk-text-center uk-margin-large-bottom animated section_subtitle">Pads are a necessity, not a luxury</h4>
@@ -134,7 +135,7 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 		</div>
 	</section>
 	<section class="video_preview grey_overlay section">
-      <a name="why"></a>
+      <hr id="why" />
 			<div class="uk-container uk-container-center uk-text-center uk-position-relative" data-uk-scrollspy="{cls:'uk-active'}">
 				<h3 class="uk-h3 uk-text-contrast animated section_title team_title">Why choose Biodegradable pads?</h3>
 				<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">Because both women's health and environment matters </h4>
@@ -178,7 +179,7 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 			</div>
 		</section>
 <section class="description section">
-    <a name="products"></a>
+    <hr id="products" />
 	<div class="uk-grid uk-grid-collapse">
 		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
 			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
@@ -196,32 +197,34 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 	</div>
 </section>
 
+
 <section class="contact grey_overlay section">
-	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-		<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
-		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
-
-		<form data-ng-submit="elasticForm($event);" class="uk-form animated form_send_message" autocomplete="off">
-			<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
-				<div class="uk-width-small-1-2 uk-margin-bottom">
-					<input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="Name">
+		<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+			<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
+			<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
+	
+			<form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
+				<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
+						<input name="id" type="hidden"     [(ngModel)]="id" /> 
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="name" placeholder="Name">
+					</div>
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="lastname" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="lastname" placeholder="Last Name">
+					</div>
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="email" placeholder="E-mail">
+					</div>
+					<div class="uk-margin-bottom uk-width-1-1">
+						<input class="uk-button button_custom_green uk-width-1-1 form_button" type="submit" value="{{valbutton}}"/>
+					</div>
 				</div>
-				<div class="uk-width-small-1-2 uk-margin-bottom">
-					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="E-mail">
-				</div>
-				<div class="uk-margin-bottom uk-width-1-1">
-					<textarea name="message" class="uk-width-1-1 uk-text-contrast form_textarea" placeholder="Message"></textarea>
-				</div>
-				<div class="uk-margin-bottom uk-width-1-1">
-					<button class="uk-button button_custom_green uk-width-1-1 form_button" type="submit">Send message</button>
-				</div>
-			</div>
-
-			<div class="success">Your message has been sent successfully.</div>
-			<div class="success_response"></div>
-
-			<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
-			<div class="error_response"></div>
-		</form>
-	</div>
-</section>
+	
+				<div class="success">Your message has been sent successfully.</div>
+				<div class="success_response"></div>
+	
+				<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+				<div class="error_response"></div>
+			</form>
+		</div>
+	</section>

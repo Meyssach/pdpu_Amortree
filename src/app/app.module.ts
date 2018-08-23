@@ -5,6 +5,10 @@ import { RouterModule } from "@angular/router";
 import { Routes } from "@angular/router";
 import { FragmentPolyfillModule } from "./fragment-polyfill/fragment-polyfill.module";
 
+import { HttpModule } from '@angular/http';  
+import { FormsModule } from '@angular/forms';  
+
+import {CommonService} from './common.service';  
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +19,6 @@ import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { DidComponent } from './did/did.component';
 import { WhyComponent } from './why/why.component';
-import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -35,7 +38,7 @@ var routes: Routes = [
             {
                 path: "",
                 pathMatch: "full",
-                redirectTo: "app"
+                redirectTo: "app/home"
             }
       ];
   
@@ -52,11 +55,13 @@ var routes: Routes = [
     HomeComponent,
     ProductComponent,
     DidComponent,
-    WhyComponent,
-    AboutUsComponent
+    WhyComponent
   ],
   imports: [
+    HttpModule,
+    FormsModule, 
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     FragmentPolyfillModule.forRoot({
       smooth: true
@@ -70,7 +75,7 @@ var routes: Routes = [
       }
   )
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
