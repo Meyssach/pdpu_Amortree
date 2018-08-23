@@ -291,7 +291,9 @@ p {
 .uk-navbar-nav > li > a:hover {
 	color: rgba(255,255,255,0.8);
 }
-
+.uk-navbar-sticky {
+	background-color:#444;
+	}
 /******* Container section *******/
 
 .container {
