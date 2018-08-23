@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor( private route: ActivatedRoute, private router: Router ) {}
 
-  Repdata;  
-  valbutton ="Submit"; 
+  
 
   onAnchorClick ( ) {
     this.route.fragment.subscribe ( f => {
