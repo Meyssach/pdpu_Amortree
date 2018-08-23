@@ -1,3 +1,32 @@
+<header class="uk-small-hidden header">
+		<nav class="uk-navbar header-nav" data-uk-navbar data-uk-sticky="cls-active: uk-navbar-sticky">
+			<div class="uk-container uk-container-center">
+				<a  routerLink="/app/home"  class="uk-navbar-brand logo_link">
+					<img class="uk-responsive-height logo" src="../../assets/photos/image.ibb.co/cu4B2b/white_logo.png" alt="">
+				</a>
+				<div class="uk-navbar-flip uk-visible-large">
+					<ul class="uk-navbar-nav header-nav-list">
+						<li class="header_nav_list_item">
+							<a routerLink="/app/home" fragment="products" (click)="onAnchorClick()" class="link_features header_nav_list_item_link" >Product</a>
+						</li>
+						<li class="header_nav_list_item">
+							<a routerLink="/app/home" fragment="why" (click)="onAnchorClick()" class="link_offer header_nav_list_item_link" >Why Amortree</a>
+						</li>
+						<li class="header_nav_list_item">
+							<a routerLink="/app/home" fragment="dyk" (click)="onAnchorClick()" class="link_pricing header_nav_list_item_link" >Did you know ?</a>
+						</li>
+						<li class="header_nav_list_item">
+							<a routerLink="/app/home" fragment="contact" (click)="onAnchorClick()" class="link_clients header_nav_list_item_link" >Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="uk-navbar-flip uk-hidden-large header_navbar_mobile_block">
+					<div data-ng-click="toggleMobileNav($event)" class="uk-navbar-toggle header_navbar_mobile"></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
@@ -199,11 +228,12 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 
 
 <section class="contact grey_overlay section">
+		<hr id="contact" />
 		<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
 			<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
 			<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
 	
-			<form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
+			<form  #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
 				<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
 						<input name="id" type="hidden"     [(ngModel)]="id" /> 
 					<div class="uk-width-small-1-2 uk-margin-bottom">
@@ -228,3 +258,31 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 			</form>
 		</div>
 	</section>
+	<footer class="footer">
+			<div class="uk-container uk-container-center uk-text-center">
+				<ul class="uk-list social_list">
+					<li class="social_list_item">
+						<a class="uk-icon-facebook social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-twitter social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-google-plus social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-linkedin social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-pinterest social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-dribbble social_list_item_link" href="#"></a>
+					</li>
+					<li class="social_list_item">
+						<a class="uk-icon-youtube social_list_item_link" href="#"></a>
+					</li>
+				</ul>
+				<div class="footer_message">© 2018 Startup. All Rights Reserved</div>
+			</div>
+		</footer>
