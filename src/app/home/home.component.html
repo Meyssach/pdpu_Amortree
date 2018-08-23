@@ -197,32 +197,34 @@ India accounts for a third of the deaths due to cervical cancer globally, with 
 	</div>
 </section>
 
+
 <section class="contact grey_overlay section">
-	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-		<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
-		<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
-
-		<form data-ng-submit="elasticForm($event);" class="uk-form animated form_send_message" autocomplete="off">
-			<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
-				<div class="uk-width-small-1-2 uk-margin-bottom">
-					<input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="Name">
+		<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
+			<h3 class="uk-h3 uk-position-relative uk-text-contrast animated section_title contact_title">Get in touch</h3>
+			<h4 class="uk-h4 uk-text-contrast uk-margin-large-bottom animated section_subtitle">If you have any questions, then please fill our contact form to get actual information about our product</h4>
+	
+			<form #userForm="ngForm"   (ngSubmit)="onSave(userForm.value)" novalidate class="uk-form animated form_send_message" autocomplete="off">
+				<div class="uk-grid uk-grid-small uk-container-center uk-width-medium-2-3 uk-width-large-1-2 uk-margin-bottom">
+						<input name="id" type="hidden"     [(ngModel)]="id" /> 
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="name" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="name" placeholder="Name">
+					</div>
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="lastname" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="lastname" placeholder="Last Name">
+					</div>
+					<div class="uk-width-small-1-2 uk-margin-bottom">
+						<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text"  required  [(ngModel)]="email" placeholder="E-mail">
+					</div>
+					<div class="uk-margin-bottom uk-width-1-1">
+						<input class="uk-button button_custom_green uk-width-1-1 form_button" type="submit" value="{{valbutton}}"/>
+					</div>
 				</div>
-				<div class="uk-width-small-1-2 uk-margin-bottom">
-					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="text" placeholder="E-mail">
-				</div>
-				<div class="uk-margin-bottom uk-width-1-1">
-					<textarea name="message" class="uk-width-1-1 uk-text-contrast form_textarea" placeholder="Message"></textarea>
-				</div>
-				<div class="uk-margin-bottom uk-width-1-1">
-					<button class="uk-button button_custom_green uk-width-1-1 form_button" type="submit">Send message</button>
-				</div>
-			</div>
-
-			<div class="success">Your message has been sent successfully.</div>
-			<div class="success_response"></div>
-
-			<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
-			<div class="error_response"></div>
-		</form>
-	</div>
-</section>
+	
+				<div class="success">Your message has been sent successfully.</div>
+				<div class="success_response"></div>
+	
+				<div class="error">E-mail must be valid and message must be longer than 1 character.</div>
+				<div class="error_response"></div>
+			</form>
+		</div>
+	</section>
