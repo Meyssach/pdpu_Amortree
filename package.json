@@ -32,10 +32,6 @@
     "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-page-scroll": "^5.0.0",
     "rxjs": "^6.2.2",
-<<<<<<< HEAD
-=======
-    "ngx-toastr": "^9.0.2",
->>>>>>> 044c3f626eadda48d129146df5ecacf9fda49d24
     "rxjs-compat": "^6.2.2",
     "save": "^2.3.2",
     "zone.js": "~0.8.26"
