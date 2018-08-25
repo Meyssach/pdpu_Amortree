@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as $ from 'jquery';
+
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import {FormGroup,FormControl,Validators,FormsModule, } from '@angular/forms';  
@@ -26,6 +28,7 @@ export class HomeComponent implements OnInit {
   
 
   ngOnInit() {
+
     this.router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
         const tree = this.router.parseUrl(this.router.url);

@@ -245,6 +245,8 @@ p {
 	right: 0;
 	z-index: 10;
 	transition: background 0.5s;
+	background-color: #00c6e0;
+	
 	
 	
 }
@@ -457,17 +459,17 @@ p {
 
 .elements {
     padding: 70px 0 30px;
-	background: #fff;
+	opacity: 0%;
 }
 .elements_item_label {
 	width: 180px;
 	height: 180px;
-	border: 1px solid #ccc;
+	border: 1px solid #00c6e0;
 	font-size: 85px;
 	line-height: 180px;
-	color: #5C6D7F;
+	color: #fff;
 	box-shadow: none;
-	background: #fff;
+	background: #00c6e0;
 	transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
 	text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
 }
@@ -478,13 +480,13 @@ p {
 }
 .elements_item_text {
 	font-size: 21px;
-	color: #333;
+	color: #fff;
 }
 .elements_item_desc {
 	line-height: 21px;
     font-size: 15px;
     font-family: arial, sans-serif;
-	color: #777;
+	color: #fff;
 }
 
 /******* Description section *******/
@@ -1060,7 +1062,7 @@ p {
 /******* Footer *******/
 
 .footer {
-	padding: 100px 0;
+	padding: 60px 0;
 	background: #fff;
 }
 .social_list {
