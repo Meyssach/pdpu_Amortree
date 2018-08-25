@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from './../user';
+import {UserService} from './../user.service';
 
 import * as $ from 'jquery';
 
@@ -10,11 +12,16 @@ import {Http,Response, Headers, RequestOptions } from '@angular/http';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  providers: [UserService]
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private route: ActivatedRoute, private router: Router ) {}
+  users: Array<User>;
+
+  selectedUser: User;
+
+  constructor( private route: ActivatedRoute, private router: Router, private _userService: UserService ) {}
 
   
 
@@ -38,6 +45,14 @@ export class HomeComponent implements OnInit {
         }
       }
     });
+  }
+
+  onSubmitAddUser(user : User){
+    this._userService.addUser(user)
+      .subscribe(resNewUser =>{
+        this.users.push(resNewUser);
+        this.selectedUser = resNewUser;
+      });
   }
 
 
