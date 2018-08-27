@@ -1044,10 +1044,8 @@ p {
 /******* Promo section *******/
 
 .promo {
-    padding: 180px 0;
-	background: url('../images/vitamin-d-health-benefits.jpg') no-repeat center center;
+	background: url('../images/background\ for\ pads.png') no-repeat center center;
 	background-size: cover;
-	background-attachment: fixed;
 	border: 0;
 }
 .promo_button {
