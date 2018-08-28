@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {User} from './../user';
 import {UserService} from './../user.service';
 
-import * as $ from 'jquery';
 
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-
-import {FormGroup,FormControl,Validators,FormsModule, } from '@angular/forms';  
-import {Http,Response, Headers, RequestOptions } from '@angular/http';  
 
 @Component({
   selector: 'app-home',
@@ -20,6 +16,7 @@ export class HomeComponent implements OnInit {
   users: Array<User>;
 
   selectedUser: User;
+
 
   constructor( private route: ActivatedRoute, private router: Router, private _userService: UserService ) {}
 
@@ -45,6 +42,8 @@ export class HomeComponent implements OnInit {
         }
       }
     });
+
+ 
   }
 
   onSubmitAddUser(user : User){
@@ -54,11 +53,8 @@ export class HomeComponent implements OnInit {
         this.selectedUser = resNewUser;
       });
 
+      this.router.navigate(['']);
 
-    
   }
-
-
- 
 
 }
