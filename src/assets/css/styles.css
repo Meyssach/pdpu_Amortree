@@ -533,9 +533,8 @@ p {
 
 .features {
 	padding: 100px 0 50px;
-	background: url('../images/whybackground.jpg') no-repeat center center;
+	background: url('../images/cramps.jpg') no-repeat center center;
 	background-size: cover;
-	background-attachment: fixed;
 	border: 0;
 }
 .features_block {
@@ -1153,9 +1152,10 @@ p {
 
 .contact {
     padding: 100px 0;
-	background: url('../photos/image.ibb.co/dJZvvw/page_9.jpg') no-repeat 0 0;
+	background: url('../images/newsletterPic.jpg') no-repeat 0 0;
     background-size: cover;
 	border: 0;
+	
 }
 
 /******* Subscribe *******/
