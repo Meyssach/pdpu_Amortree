@@ -35,6 +35,12 @@
 
 /******* Document *******/
 
+slider{
+	background: no-repeat center center;
+	background-size: cover;
+	border: 0;
+}
+
 body {
     background: #fff;
     font: normal 17px Arial, sans-serif;
@@ -244,8 +250,8 @@ p {
 	left: 0;
 	right: 0;
 	z-index: 10;
-	transition: background 0.5s;
-	background-color: #00c6e0;
+	transition: background 0.5s;	
+	background-color: rgba(116, 228, 172, 0.7);
 	
 	
 	
@@ -464,12 +470,12 @@ p {
 .elements_item_label {
 	width: 180px;
 	height: 180px;
-	border: 1px solid #00c6e0;
+	border: 1px solid rgba(116,228,172,1);
 	font-size: 85px;
 	line-height: 180px;
 	color: #fff;
 	box-shadow: none;
-	background: #00c6e0;
+	background: rgba(116,228,172,1);
 	transition: box-shadow 0.5s, border 0.5s, text-shadow 0.5s;
 	text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
 }
@@ -498,6 +504,7 @@ p {
 }
 .uk-margin-large-bottom.description_title {
 	margin-bottom: 40px !important;
+	color: #fff;
 }
 .description_block {
 	margin: 0 100px;
@@ -1148,7 +1155,6 @@ p {
     padding: 100px 0;
 	background: url('../photos/image.ibb.co/dJZvvw/page_9.jpg') no-repeat 0 0;
     background-size: cover;
-    background-attachment: fixed;
 	border: 0;
 }
 

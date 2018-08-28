@@ -53,6 +53,8 @@ export class HomeComponent implements OnInit {
         this.users.push(resNewUser);
         this.selectedUser = resNewUser;
       });
+
+    
   }
 
 
