@@ -384,14 +384,14 @@ p {
 	color: #444;
 }
 .green_button {
-	background: #4ace6f;
+	background: #74e4ac;
 	color: #fff;
-	border: 1px solid #4ace6f;
+	border: 1px solid #74e4ac;
 }
 .green_button:hover {
-	background: #3fb05e;
+	background: #74e4ac;
 	color: #fff;
-	border: 1px solid #3fb05e;
+	border: 1px solid #74e4ac;
 }
 .container_arrow {
 	position: absolute;
@@ -1187,7 +1187,7 @@ p {
 	position: relative;
 	height: 45px !important;
 	min-width: 125px;
-	border: 1px solid #4caf50;
+	border: 1px solid #74e4ac;
 	-webkit-transition: background 0.3s;
 	-moz-transition: background 0.3s;
 	-o-transition: background 0.3s;
@@ -1385,14 +1385,14 @@ p {
 }
 .button_custom_green {
 	color: #fff;
-	background-color: #51bd55;
+	background-color: #74e4ac;
 	transition: background 0.3s;
 }
 .button_custom_green:hover,
 .button_custom_green:active,
 .button_custom_green:focus {
 	color: #fff;
-	background-color: #4caf50;
+	background-color: #74e4ac;
 }
 .button_custom_light_green {
 	color: #fff;
