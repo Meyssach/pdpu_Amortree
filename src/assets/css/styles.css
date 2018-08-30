@@ -1053,6 +1053,7 @@ p {
 	background: url('../images/background\ for\ pads.png') no-repeat center center;
 	background-size: cover;
 	border: 0;
+	margin: auto;
 }
 .promo_button {
 	padding: 0 75px;
@@ -1152,9 +1153,10 @@ p {
 
 .contact {
     padding: 100px 0;
-	background: url('../images/newsletterPic.jpg') no-repeat 0 0;
+	background: url('../images/newsletterPic.jpg') no-repeat center center;
     background-size: cover;
 	border: 0;
+	margin: auto;
 	
 }
 
